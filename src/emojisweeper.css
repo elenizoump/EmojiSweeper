@@ -1,0 +1,65 @@
+.emoji-grid-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.emoji-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 500px;
+  height: 500px;
+  background-color: #ffffff;
+}
+
+.emoji-button {
+  appearance: none;
+  border: 1px solid grey;
+  background-color: transparent;
+}
+
+.emoji-button:hover {
+  background-color: silver;
+}
+
+.emoji-button.safe-pick,
+.emoji-button.mine-pick {
+  cursor: default;
+}
+
+.emoji-button.placeholder {
+  cursor: default;
+}
+
+.emoji-button.placeholder:hover {
+  background-color: transparent;
+}
+
+.emoji-button.safe-pick,
+.emoji-button.safe-pick:hover {
+  background-color: green;
+}
+
+.emoji-button.mine-pick,
+.emoji-button.mine-pick:hover {
+  background-color: red;
+}
+
+.game-state-button-wrapper {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+}
+
+.results-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+}
